@@ -31,6 +31,10 @@ table Sales
 
 		changedProperty = FormatString
 
+	measure Measure = SUM('Currency Exchange'[FromCurrency])
+		formatString: 0
+		lineageTag: 81cebc6e-3ded-44db-b105-8c60f3dcafc1
+
 	column 'Order Number'
 		dataType: int64
 		isHidden
